@@ -15,9 +15,27 @@ function getRandomInt(min, max) {
 }
 
 var randomInt = getRandomInt(1, 100);
+console.log(randomInt)
 /* END STARTING CODE */
-
-// your code goes under here
+	var answer = prompt ("guess a number between 1 & 100")
+	answer = parseInt(answer)
+	if (answer > randomInt) {
+		alert("you guessed too high")
+	} else if (answer < randomInt) {
+		alert("you guessed too low")
+	} else {
+		alert ("you gussed correct")
+	}
+	while (answer != randomInt) {
+		if (answer > randomInt) {
+		alert("you guessed too high")
+		answer = prompt ("guess again")
+	} else if (answer < randomInt) {
+		alert("you guessed too low")
+		answer = prompt ("guess again")
+	} else {
+		alert ("you gussed correct")
+	}}
 
     </script>
 </body>

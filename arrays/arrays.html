@@ -9,10 +9,11 @@
     <h1>JavaScript Arrays</h1>
 
     <script>
-    	answer = [prompt ("please enter three things u like")];
-    	console.log(answer)
-
-
+    	answer = prompt ("please enter three things u like, please write ', ' between them :)");
+    	answer = answer.split(", ")
+    	answer.sort()
+    	answer = answer.join(", ")
+    	document.write(answer)
     </script>
 </body>
 
