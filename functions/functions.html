@@ -14,12 +14,33 @@ function isLetter(char) {
     char = char.toLowerCase();
     return "abcdefghijklmnopqrstuvwxyz".indexOf(char) >= 0;
 }
-console.log(isLetter("Ee"))
-function isPalindrome(word) {
 
+function reverseString(str) {
+	var split_str = str.split("");
+	var reverse_str = split_str.reverse();
+	var join_str = reverse_str.join("")
+    return join_str;
 }
 
+answer = prompt("try a palindrome")
+
+function isPalindrome(word) {
+	// for (var i =0; i < word.length; i++) {
+	// 	isLetter(word.charAt(i))
+	// }
+	if (word ==reverseString(word)){
+		console.log("true")
+	} else {
+		console.log("false")
+	}
+
+	}
+isPalindrome(answer)
+
+
     </script>
+
+
 </body>
 
 </html>
